@@ -1,21 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spolight</title>
+    <title>Comic Homepage</title>
 
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Top logo bar */
+        header {
+            background-color: #1e9be6;
+            padding: 20px;
+            text-align: center;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        /* Navigation bar */
+        nav {
+            background-color: #1282c0;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 0 20px;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        /* Recommendations section */
+        h2 {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        /* Layout for each recommendation item */
+        .rec-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 40px 0;
+        }
+
+        .rec-item img {
+            width: 180px;
+            height: auto;
+            margin-right: 40px;
+            border-radius: 5px;
+        }
+
+        .text-box {
+            width: 300px;
+            height: 150px;
+            border: 2px solid #333;
+            padding: 20px;
+        }
+    </style>
 </head>
-
 <body>
-    <header>
-        <nav>
-            <a href="page2spotlight.html">Spotlights</a>
-        </nav>
-    </header>
-    <h1>This is Jaden Sowards Website</h1>
-    
-</body>
 
+    <!-- Header -->
+    <header>
+        Logo
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Stories</a>
+        <a href="#">Recommendations</a>
+    </nav>
+
+    <!-- Recommendations Title -->
+    <h2>Recommendations</h2>
+
+    <!-- Recommendation 1 -->
+    <div class="rec-item">
+        <img src="hush.jpg" alt="Hush Comic">
+        <div class="text-box">Text Box 1</div>
+    </div>
+
+    <!-- Recommendation 2 -->
+    <div class="rec-item">
+        <img src="jokers.jpg" alt="Three Jokers Comic">
+        <div class="text-box">Text Box 2</div>
+    </div>
+
+    <!-- Recommendation 3 -->
+    <div class="rec-item">
+        <img src="batgirls.jpg" alt="Batgirls Comic">
+        <div class="text-box">Text Box 3</div>
+    </div>
+
+</body>
 </html>
