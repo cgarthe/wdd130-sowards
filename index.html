@@ -1,48 +1,101 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Comic Homepage</title>
+  <link rel="stylesheet" href="styles/spotlightstyle.css">
 
   <style>
-    body {
+    .test {
+      color: #20A4F3; /* Primary */
+      color: #E1E2EF; /* Secondary */
+      color: #242038; /* Accent 1 */
+      color: #788475; /* Accent 2 */
+    }
+
+    * {
+      box-sizing: border-box;
       margin: 0;
+      padding: 0;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    header, footer {
+      background-color: #20A4F3;
+    }
+
+    #logo {
+      max-width: 150px;
+      margin: 10px;
+      border-radius: 50%;
+    }
+
+    nav {
+      background-color: #20A4F3;
+      display: flex;
+      justify-content: space-evenly;
+      border-top: 5px solid black;
+    }
+
+    nav a {
+      color: #242038;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: x-large;
+      margin: 10px;
+    }
+
+    body {
+      background-color: lightgray;
       font-family: Arial, sans-serif;
     }
 
-    h2 {
+    main {
+      background-color: lightgray;
+    }
+
+    .title {
       text-align: center;
-      margin-top: 30px;
+      margin: 20px;
     }
 
-    .rec-item {
+    .spotlights {
       display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 40px 0;
+      justify-content: space-around;
+      margin: 50px;
+      flex-wrap: wrap;
     }
 
-    .rec-item img {
-      width: 180px;
-      height: auto;
-      margin-right: 40px;
+    .spotlights img {
+      max-width: 300px;
+      margin: 10px;
       border-radius: 5px;
     }
 
     .text-box {
-      width: 300px;
-      height: 150px;
+      max-width: 300px;
       border: 2px solid #333;
       padding: 20px;
+      background-color: #f9f9f9;
+      margin: 10px;
+    }
+
+    footer {
+      padding: 15px;
+      color: white;
+      text-align: center;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <img src="images/logo.png" alt="Logo">
+    <img id="logo" src="images/logo.png" alt="Logo">
   </header>
 
   <nav>
@@ -51,31 +104,39 @@
     <a href="page2spotlight.html">Recommendations</a>
   </nav>
 
-  <h2>Recommendations</h2>
+  <main>
+    <h2 class="title">Recommendations</h2>
 
-  <div class="rec-item">
-    <img src="images/batmanhush.jpeg" alt="Hush Comic">
-    <div class="text-box">
-      Gotham’s deadliest foes unite in a sinister plot led by a mastermind close to Bruce Wayne. 
-      Pushed to his limits, Batman must unravel the mystery before those he loves pay the price.
-    </div>
-  </div>
+    <div class="spotlights">
+      <div>
+        <img src="images/batmanhush.jpeg" alt="Hush Comic">
+        <div class="text-box">
+          Gotham’s deadliest foes unite in a sinister plot led by a mastermind close to Bruce Wayne. 
+          Pushed to his limits, Batman must unravel the mystery before those he loves pay the price.
+        </div>
+      </div>
 
-  <div class="rec-item">
-    <img src="images/batmanthreejokers.JPG" alt="Three Jokers Comic">
-    <div class="text-box">
-      Batman discovers a shocking truth: there are three Jokers. 
-      With Barbara Gordon and Jason Todd at his side, the Dark Knight sets out to end their reign of terror once and for all.
-    </div>
-  </div>
+      <div>
+        <img src="images/batmanthreejokers.JPG" alt="Three Jokers Comic">
+        <div class="text-box">
+          Batman discovers a shocking truth: there are three Jokers. 
+          With Barbara Gordon and Jason Todd at his side, the Dark Knight sets out to end their reign of terror once and for all.
+        </div>
+      </div>
 
-  <div class="rec-item">
-    <img src="images/batgirls.JPG" alt="Batgirls Comic">
-    <div class="text-box">
-      Cassandra Cain and Stephanie Brown navigate Gotham’s darkness through the light of their friendship. 
-      Guided by Oracle, the Batgirls balance battling villains with the struggles of being ordinary teens—fast cars, curfews, and all.
+      <div>
+        <img src="images/batgirls.JPG" alt="Batgirls Comic">
+        <div class="text-box">
+          Cassandra Cain and Stephanie Brown navigate Gotham’s darkness through the light of their friendship. 
+          Guided by Oracle, the Batgirls balance battling villains with the struggles of being ordinary teens—fast cars, curfews, and all.
+        </div>
+      </div>
     </div>
-  </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Your Website Name
+  </footer>
 
 </body>
 </html>
