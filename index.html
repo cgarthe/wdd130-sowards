@@ -1,11 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sowards</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comic Homepage</title>
+
+  <style>
+    .test {
+      color: #20A4F3; 
+      color: #E1E2EF; 
+      color: #242038; 
+      color: #788475; 
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    header, footer {
+      background-color: #20A4F3;
+      justify-content: center; 
+      align-items: center;     
+    }
+
+    #logo {
+      max-width: 150px;
+      margin: 10px;
+      border-radius: 50%;
+    }
+
+    nav {
+      background-color: #20A4F3;
+      display: flex;
+      justify-content: space-evenly;
+      border-top: 5px solid black;
+    }
+
+    nav a {
+      color: #242038;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: x-large;
+      margin: 10px;
+    }
+
+    body {
+      background-color: lightgray;
+      font-family: Arial, sans-serif;
+    }
+
+    main {
+      background-color: lightgray;
+    }
+
+    .title {
+      text-align: center;
+      margin: 20px;
+    }
+
+    .spotlights {
+      display: flex;
+      justify-content: space-around;
+      margin: 50px;
+      flex-wrap: wrap;
+    }
+
+    .spotlights img {
+      max-width: 300px;
+      margin: 10px;
+      border-radius: 5px;
+    }
+
+    .text-box {
+      max-width: 300px;
+      border: 2px solid #333;
+      padding: 20px;
+      background-color: #f9f9f9;
+      margin: 10px;
+    }
+
+    footer {
+      padding: 15px;
+      color: white;
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
-    <h1>This is Jaden Sowards Website</h1>
+
+  <header>
+    <img id="logo" src="images/logo.png" alt="Logo">
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="storylines.html">Stories</a>
+    <a href="page2spotlight.html">Recommendations</a>
+  </nav>
+
+  <main>
+    <h2 class="title">Recommendations</h2>
+
+    <div class="spotlights">
+      <div>
+        <img src="images/batmanhush.jpeg" alt="Hush Comic">
+        <div class="text-box">
+          Gotham’s deadliest foes unite in a sinister plot led by a mastermind close to Bruce Wayne. 
+          Pushed to his limits, Batman must unravel the mystery before those he loves pay the price.
+        </div>
+      </div>
+
+      <div>
+        <img src="images/batmanthreejokers.JPG" alt="Three Jokers Comic">
+        <div class="text-box">
+          Batman discovers a shocking truth: there are three Jokers. 
+          With Barbara Gordon and Jason Todd at his side, the Dark Knight sets out to end their reign of terror once and for all.
+        </div>
+      </div>
+
+      <div>
+        <img src="images/batgirls.JPG" alt="Batgirls Comic">
+        <div class="text-box">
+          Cassandra Cain and Stephanie Brown navigate Gotham’s darkness through the light of their friendship. 
+          Guided by Oracle, the Batgirls balance battling villains with the struggles of being ordinary teens—fast cars, curfews, and all.
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Multi Comics
+  </footer>
+
 </body>
 </html>
